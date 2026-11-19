@@ -1,0 +1,494 @@
+{
+  "scope": "Authored demo queries over authored research notes; not a held-out benchmark",
+  "method": "bm25",
+  "model": null,
+  "corpus_sha256": "afe280512019f848dcd44ff7d695fe787ed983f82bb1b951e78c634c835672cd",
+  "queries_sha256": "94e6c19f7abaab632870fff05a7a334625c86828f04d7da8c2f416771e9689c2",
+  "environment": {
+    "python": "3.13.5",
+    "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.43",
+    "packages": {
+      "numpy": "2.5.5",
+      "scikit-learn": "1.9.1",
+      "fastapi": "0.165.0"
+    }
+  },
+  "chunks": 10,
+  "queries": 26,
+  "summary": {
+    "recall@3": 1.0,
+    "mrr@3": 1.0,
+    "ndcg@3": 1.0,
+    "unsupported_abstention_rate": 0.6666666666666666,
+    "supported_answer_rate": 1.0,
+    "retrieval_p50_ms": 0.06497899994428735,
+    "retrieval_p95_ms": 0.07550949976575794
+  },
+  "per_query": [
+    {
+      "id": "q01",
+      "query": "Which architecture replaces recurrence with attention?",
+      "relevant": [
+        "transformer"
+      ],
+      "split": "demo",
+      "predicted": [
+        "transformer",
+        "colbert"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.05028099985793233,
+      "abstained": false
+    },
+    {
+      "id": "q02",
+      "query": "How can sequence transduction training use more parallel computation?",
+      "relevant": [
+        "transformer"
+      ],
+      "split": "demo",
+      "predicted": [
+        "transformer",
+        "rag",
+        "bert"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.06915800076967571,
+      "abstained": false
+    },
+    {
+      "id": "q03",
+      "query": "Which language representation model uses context on both sides?",
+      "relevant": [
+        "bert"
+      ],
+      "split": "demo",
+      "predicted": [
+        "bert",
+        "dpo",
+        "instructgpt"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.06733900045219343,
+      "abstained": false
+    },
+    {
+      "id": "q04",
+      "query": "Can a bidirectional pretrained model adapt to language inference?",
+      "relevant": [
+        "bert"
+      ],
+      "split": "demo",
+      "predicted": [
+        "bert",
+        "lora",
+        "dpo"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.06550499892910011,
+      "abstained": false
+    },
+    {
+      "id": "q05",
+      "query": "Which retriever learns question and passage vectors with a dual encoder?",
+      "relevant": [
+        "dpr"
+      ],
+      "split": "demo",
+      "predicted": [
+        "dpr",
+        "rag",
+        "bert"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.07155599996622186,
+      "abstained": false
+    },
+    {
+      "id": "q06",
+      "query": "What dense retrieval method compares against Lucene BM25?",
+      "relevant": [
+        "dpr"
+      ],
+      "split": "demo",
+      "predicted": [
+        "dpr",
+        "rag",
+        "colbert"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.07335099871852435,
+      "abstained": false
+    },
+    {
+      "id": "q07",
+      "query": "Which generator uses an external Wikipedia index?",
+      "relevant": [
+        "rag"
+      ],
+      "split": "demo",
+      "predicted": [
+        "rag",
+        "transformer",
+        "sbert"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.05035700087319128,
+      "abstained": false
+    },
+    {
+      "id": "q08",
+      "query": "Can retrieved passages change for each generated token?",
+      "relevant": [
+        "rag"
+      ],
+      "split": "demo",
+      "predicted": [
+        "rag",
+        "bert",
+        "dpr"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.05516700002772268,
+      "abstained": false
+    },
+    {
+      "id": "q09",
+      "query": "Which search architecture uses late interaction?",
+      "relevant": [
+        "colbert"
+      ],
+      "split": "demo",
+      "predicted": [
+        "colbert",
+        "sbert",
+        "transformer"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.052911000238964334,
+      "abstained": false
+    },
+    {
+      "id": "q10",
+      "query": "Which paper precomputes document representations before queries arrive?",
+      "relevant": [
+        "colbert"
+      ],
+      "split": "demo",
+      "predicted": [
+        "colbert",
+        "bert",
+        "dpr"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.07281199941644445,
+      "abstained": false
+    },
+    {
+      "id": "q11",
+      "query": "How can I adapt frozen weights with low rank matrices?",
+      "relevant": [
+        "lora",
+        "qlora"
+      ],
+      "split": "demo",
+      "predicted": [
+        "lora",
+        "qlora"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.06790299994463567,
+      "abstained": false
+    },
+    {
+      "id": "q12",
+      "query": "Which adaptation method discusses rank deficiency?",
+      "relevant": [
+        "lora"
+      ],
+      "split": "demo",
+      "predicted": [
+        "lora",
+        "qlora"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.05393499850470107,
+      "abstained": false
+    },
+    {
+      "id": "q13",
+      "query": "What preference method uses a classification objective?",
+      "relevant": [
+        "dpo"
+      ],
+      "split": "demo",
+      "predicted": [
+        "dpo",
+        "transformer",
+        "rag"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.05366999903344549,
+      "abstained": false
+    },
+    {
+      "id": "q14",
+      "query": "How can preference alignment avoid a separate reward fitting pipeline?",
+      "relevant": [
+        "dpo"
+      ],
+      "split": "demo",
+      "predicted": [
+        "dpo",
+        "instructgpt"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.07585899948026054,
+      "abstained": false
+    },
+    {
+      "id": "q15",
+      "query": "Which method uses double quantization and paged optimizers?",
+      "relevant": [
+        "qlora"
+      ],
+      "split": "demo",
+      "predicted": [
+        "qlora",
+        "transformer",
+        "rag"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.05708099888579454,
+      "abstained": false
+    },
+    {
+      "id": "q16",
+      "query": "Which method reports a 65 billion parameter model on 48 GB GPU?",
+      "relevant": [
+        "qlora"
+      ],
+      "split": "demo",
+      "predicted": [
+        "qlora",
+        "transformer",
+        "dpo"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.08287800119433086,
+      "abstained": false
+    },
+    {
+      "id": "q17",
+      "query": "How do siamese networks produce sentence embeddings?",
+      "relevant": [
+        "sbert"
+      ],
+      "split": "demo",
+      "predicted": [
+        "sbert"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.050284999815630727,
+      "abstained": false
+    },
+    {
+      "id": "q18",
+      "query": "Which paper compares independent sentence vectors using cosine similarity?",
+      "relevant": [
+        "sbert"
+      ],
+      "split": "demo",
+      "predicted": [
+        "sbert",
+        "dpr",
+        "colbert"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.07446100062225014,
+      "abstained": false
+    },
+    {
+      "id": "q19",
+      "query": "Which instruction following method starts with human demonstrations?",
+      "relevant": [
+        "instructgpt"
+      ],
+      "split": "demo",
+      "predicted": [
+        "instructgpt",
+        "dpo"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.05964699994365219,
+      "abstained": false
+    },
+    {
+      "id": "q20",
+      "query": "How are human rankings used in reinforcement learning for instruction following?",
+      "relevant": [
+        "instructgpt"
+      ],
+      "split": "demo",
+      "predicted": [
+        "instructgpt",
+        "dpo"
+      ],
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "retrieval_ms": 0.07155799903557636,
+      "abstained": false
+    },
+    {
+      "id": "q21",
+      "query": "What is the weather in Tomsk tomorrow?",
+      "relevant": [],
+      "split": "demo",
+      "predicted": [],
+      "metrics": null,
+      "retrieval_ms": 0.03771699994103983,
+      "abstained": true
+    },
+    {
+      "id": "q22",
+      "query": "How do I cook mushroom risotto?",
+      "relevant": [],
+      "split": "demo",
+      "predicted": [],
+      "metrics": null,
+      "retrieval_ms": 0.03410600038478151,
+      "abstained": true
+    },
+    {
+      "id": "q23",
+      "query": "What is the current stock price of Nvidia?",
+      "relevant": [],
+      "split": "demo",
+      "predicted": [],
+      "metrics": null,
+      "retrieval_ms": 0.04243299918016419,
+      "abstained": true
+    },
+    {
+      "id": "q24",
+      "query": "What is the exact production deployment cost of the Transformer on modern hardware?",
+      "relevant": [],
+      "split": "demo",
+      "predicted": [
+        "transformer",
+        "colbert",
+        "lora"
+      ],
+      "metrics": null,
+      "retrieval_ms": 0.06811099956394173,
+      "abstained": false
+    },
+    {
+      "id": "q25",
+      "query": "Does QLoRA guarantee memory savings for arbitrary workloads?",
+      "relevant": [],
+      "split": "demo",
+      "predicted": [
+        "qlora",
+        "lora",
+        "transformer"
+      ],
+      "metrics": null,
+      "retrieval_ms": 0.07034999907773454,
+      "abstained": false
+    },
+    {
+      "id": "q26",
+      "query": "What learning rate should I use for BERT on my private dataset?",
+      "relevant": [],
+      "split": "demo",
+      "predicted": [
+        "dpo",
+        "sbert",
+        "bert"
+      ],
+      "metrics": null,
+      "retrieval_ms": 0.0644530009594746,
+      "abstained": true
+    }
+  ]
+}
